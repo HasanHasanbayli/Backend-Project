@@ -1,0 +1,41 @@
+﻿@model Skill
+@{
+    ViewData["Title"] = "Update";
+}
+<div class="row mt-3">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Update Teacher</h4>
+                <form class="forms-sample" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label asp-for="Language"></label>
+                        <input asp-for="Language" class="form-control" placeholder="Name">
+                        <span asp-validation-for="Language" class="text-danger"></span>
+
+                        <label asp-for="TeamLeader"></label>
+                        <input asp-for="TeamLeader" class="form-control" placeholder="descroption">
+                        <span asp-validation-for="TeamLeader" class="text-danger"></span>
+
+                        <label asp-for="Development"></label>
+                        <input asp-for="Development" class="form-control" placeholder="descroption">
+                        <span asp-validation-for="Development" class="text-danger"></span>
+
+                        <label asp-for="Design"></label>
+                        <input asp-for="Design" class="form-control" placeholder="descroption">
+                        <span asp-validation-for="Design" class="text-danger"></span>
+
+                        <label asp-for="Innovation"></label>
+                        <input asp-for="Innovation" class="form-control" placeholder="descroption">
+                        <span asp-validation-for="Innovation" class="text-danger"></span>
+
+                        <label asp-for="Communication"></label>
+                        <input asp-for="Communication" class="form-control" placeholder="descroption">
+                        <span asp-validation-for="Communication" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-warning mr-2">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+﻿@model Skill
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Create Skill</h4>
+                <form class="forms-sample" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label asp-for="Language"></label>
+                        <input asp-for="Language" class="form-control" accept="image/*">
+                        <span asp-validation-for="Language" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TeamLeader"></label>
+                        <input asp-for="TeamLeader" class="form-control" placeholder="Title">
+                        <span asp-validation-for="TeamLeader" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Development"></label>
+                        <input asp-for="Development" class="form-control" placeholder="Name">
+                        <span asp-validation-for="Development" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Design"></label>
+                        <input asp-for="Design" class="form-control" placeholder="Postion">
+                        <span asp-validation-for="Design" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Innovation"></label>
+                        <input asp-for="Innovation" class="form-control" placeholder="Postion">
+                        <span asp-validation-for="Innovation" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Communication"></label>
+                        <input asp-for="Communication" class="form-control" placeholder="Postion">
+                        <span asp-validation-for="Communication" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Teacher Name</label>
+                        <select asp-for="TeacherId">
+                            @foreach (var item in ViewBag.Teachers)
+                            {
+                                <option value="@item.Id">@item.FullName</option>
+                            }
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-success mr-2">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

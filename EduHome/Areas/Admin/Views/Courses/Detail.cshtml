@@ -1,0 +1,31 @@
+﻿@model Courses
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="row">
+    <img src="~/img/course/@Model.Image" width="400px" height="400px"/>
+</div>
+<div>
+    <h3 class="mt-3">Title</h3>
+    @Model.Title
+</div>
+<div>
+    <h3 class="mt-3">Description</h3>
+    @Model.Description
+</div>
+<div>
+    <h3 class="mt-3">AboutCourses</h3>
+    @Model.AboutCourses
+</div>
+<div>
+    <h3 class="mt-3">HowToApply</h3>
+    @Model.HowToApply
+</div>
+<div>
+    <h3 class="mt-3">Certification</h3>
+    @Model.Certification
+</div>
+<div class="row mt-3">
+    <a class="btn btn-dark" asp-action="Index">Go Back</a>
+</div>

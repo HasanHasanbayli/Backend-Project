@@ -1,0 +1,77 @@
+﻿@model Teacher
+@{
+    ViewData["Title"] = "Update";
+}
+<div class="row mt-3">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Update Teacher</h4>
+                <form class="forms-sample" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label asp-for="Photo"></label>
+                        <input asp-for="Photo" class="form-control" accept="image/*" placeholder="Name">
+                        <span asp-validation-for="Photo" class="text-danger"></span>
+
+                        <label asp-for="FullName"></label>
+                        <input asp-for="FullName" class="form-control" placeholder="descroption">
+                        <span asp-validation-for="FullName" class="text-danger"></span>
+
+                        <label asp-for="Position"></label>
+                        <input asp-for="Position" class="form-control" placeholder="descroption">
+                        <span asp-validation-for="Position" class="text-danger"></span>
+
+                        <label asp-for="About"></label>
+                        <input asp-for="About" class="form-control" placeholder="descroption">
+                        <span asp-validation-for="About" class="text-danger"></span>
+
+                        <label asp-for="Degree"></label>
+                        <input asp-for="Degree" class="form-control" placeholder="descroption">
+                        <span asp-validation-for="Degree" class="text-danger"></span>
+
+                        <label asp-for="Experience"></label>
+                        <input asp-for="Experience" class="form-control" placeholder="title">
+                        <span asp-validation-for="Experience" class="text-danger"></span>
+
+                        <label asp-for="Hobbies"></label>
+                        <input asp-for="Hobbies" class="form-control" placeholder="title">
+                        <span asp-validation-for="Hobbies" class="text-danger"></span>
+
+                        <label asp-for="Faculty"></label>
+                        <input asp-for="Faculty" class="form-control" placeholder="title">
+                        <span asp-validation-for="Faculty" class="text-danger"></span>
+
+                        <label asp-for="Mail"></label>
+                        <input asp-for="Mail" class="form-control" placeholder="title">
+                        <span asp-validation-for="Mail" class="text-danger"></span>
+
+                        <label asp-for="Call"></label>
+                        <input asp-for="Call" class="form-control" placeholder="title">
+                        <span asp-validation-for="Call" class="text-danger"></span>
+
+                        <label asp-for="Skype"></label>
+                        <input asp-for="Skype" class="form-control" placeholder="title">
+                        <span asp-validation-for="Skype" class="text-danger"></span>
+
+                        <label asp-for="Facebook"></label>
+                        <input asp-for="Facebook" class="form-control" placeholder="title">
+                        <span asp-validation-for="Facebook" class="text-danger"></span>
+
+                        <label asp-for="Pinterest"></label>
+                        <input asp-for="Pinterest" class="form-control" placeholder="title">
+                        <span asp-validation-for="Pinterest" class="text-danger"></span>
+
+                        <label asp-for="Vkontakte"></label>
+                        <input asp-for="Vkontakte" class="form-control" placeholder="title">
+                        <span asp-validation-for="Vkontakte" class="text-danger"></span>
+
+                        <label asp-for="Twitter"></label>
+                        <input asp-for="Twitter" class="form-control" placeholder="title">
+                        <span asp-validation-for="Twitter" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-warning mr-2">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

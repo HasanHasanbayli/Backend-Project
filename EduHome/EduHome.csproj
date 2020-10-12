@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200919153509_CreateCoursesTable.cs" />
+    <Compile Remove="Migrations\20200919153509_CreateCoursesTable.Designer.cs" />
+    <Compile Remove="Migrations\20200919161353_CreateCoursesTable.cs" />
+    <Compile Remove="Migrations\20200919161353_CreateCoursesTable.Designer.cs" />
+    <Compile Remove="Migrations\20200919162806_RemoveColumnFromCourses.cs" />
+    <Compile Remove="Migrations\20200919162806_RemoveColumnFromCourses.Designer.cs" />
+    <Compile Remove="Migrations\20200919191544_CreateTeacherAndTeacherSkillsTable.cs" />
+    <Compile Remove="Migrations\20200919191544_CreateTeacherAndTeacherSkillsTable.Designer.cs" />
+    <Compile Remove="Migrations\20200919195903_AddedTeacherAndSkillTable.cs" />
+    <Compile Remove="Migrations\20200919195903_AddedTeacherAndSkillTable.Designer.cs" />
+    <Compile Remove="Migrations\20200919202430_CreateTeacherAndSkillTable.cs" />
+    <Compile Remove="Migrations\20200919202430_CreateTeacherAndSkillTable.Designer.cs" />
+    <Compile Remove="Migrations\20200919204753_AddColumnToTeacherAndSkillTable.cs" />
+    <Compile Remove="Migrations\20200919204753_AddColumnToTeacherAndSkillTable.Designer.cs" />
+    <Compile Remove="Migrations\20200919221634_ChangeColumnToSkillTable.cs" />
+    <Compile Remove="Migrations\20200919221634_ChangeColumnToSkillTable.Designer.cs" />
+    <Compile Remove="Migrations\20200919223100_ChangeColumnToSkillTable.cs" />
+    <Compile Remove="Migrations\20200919223100_ChangeColumnToSkillTable.Designer.cs" />
+    <Compile Remove="Migrations\20200920100410_ChangeColumToTeacherTable.cs" />
+    <Compile Remove="Migrations\20200920100410_ChangeColumToTeacherTable.Designer.cs" />
+    <Compile Remove="Migrations\20200920100527_ChangeTeacherTable.cs" />
+    <Compile Remove="Migrations\20200920100527_ChangeTeacherTable.Designer.cs" />
+    <Compile Remove="Migrations\20200920101609_ChangeColumnToSkillTable.cs" />
+    <Compile Remove="Migrations\20200920101609_ChangeColumnToSkillTable.Designer.cs" />
+    <Compile Remove="Migrations\20200920101952_ChangeSkillAndTeacher.cs" />
+    <Compile Remove="Migrations\20200920101952_ChangeSkillAndTeacher.Designer.cs" />
+    <Compile Remove="Migrations\20200920174406_CreateTeacherAndSkillTable.cs" />
+    <Compile Remove="Migrations\20200920174406_CreateTeacherAndSkillTable.Designer.cs" />
+    <Compile Remove="Migrations\20200924132557_CreateCategoryTable.cs" />
+    <Compile Remove="Migrations\20200924132557_CreateCategoryTable.Designer.cs" />
+    <Compile Remove="Migrations\20200925213412_AddCategoryAndCoursesTable.cs" />
+    <Compile Remove="Migrations\20200925213412_AddCategoryAndCoursesTable.Designer.cs" />
+    <Compile Remove="Migrations\20200926214811_CreateEventAndSpikerAndCategoryRelationsTable.cs" />
+    <Compile Remove="Migrations\20200926214811_CreateEventAndSpikerAndCategoryRelationsTable.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+
+</Project>
